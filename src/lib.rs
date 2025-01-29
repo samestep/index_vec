@@ -216,16 +216,6 @@ impl Idx for u32 {
     }
 }
 
-impl Idx for usize {
-    fn from_usize(idx: usize) -> Self {
-        idx
-    }
-
-    fn index(self) -> usize {
-        self
-    }
-}
-
 /// A macro equivalent to the stdlib's `vec![]`, but producing an `IndexVec`.
 #[macro_export]
 macro_rules! index_vec {
